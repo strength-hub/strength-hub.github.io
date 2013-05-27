@@ -1,12 +1,13 @@
 @charset "utf-8";
 /* Strength Hub - CSS */
 
-
+p { font-weight: normal; }
 a { text-decoration: none; }
 .float-left { float: left; }
 .float-right { float: right; }
 
-.header { position: fixed; background: #FFF; z-index: 100; padding: 10px 0 20px 0; }
+.header-bg { background: #FFF; width: 100%; z-index: 100; position: fixed; top: 0; }
+.header { background: #FFF; z-index: 200; padding: 10px 0 20px 0; }
 
 .sh-logo { margin: 40px 0 0 0; }
 
@@ -32,22 +33,23 @@ a { text-decoration: none; }
 .sign-up-about { padding: 8px 15px; font-size: 1.8em; }
 
 .sign-up-first { text-align: center; }
-.sign-up-first > p { font-size: 1.3em; margin: 10px 0; }
-.sh-input { width: 600px; }
-.sh-btn { background-color:#2383b5; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:inline-block; color:#ffffff; font-family: 'Ubuntu', Arial, Sans-serif; text-transform: uppercase; font-size:15px; font-weight:normal; padding:6px 24px; margin: 0 0 10px 10px; text-decoration:none; border: 0;}
+.sign-up-first > p { font-size: 1.8em; margin: 10px 0; }
+.sh-input { width: 600px; height: 40px !important; }
+.sh-btn { background-color:#2383b5; -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px; display:inline-block; color:#ffffff; font-family: 'Ubuntu', Arial, Sans-serif; text-transform: uppercase; font-size:15px; font-weight:normal; padding:14px 24px; margin: 0 0 10px 10px; text-decoration:none; border: 0;}
 
 .sign-up-second { text-align: center; padding: 20px 0; }
 .sign-up-second > p { font-size: 1.3em; margin: 10px 0; }
 
-
-.features { background-color: #2383b5; color: #FFF; text-align: center; }
+.features-bg { width: 100%; background-color: #2383b5; }
+.features { color: #FFF; text-align: center; }
 .features > p { font-size: 1.8em; margin: 10px 0 20px 0; }
 
 .features-icon { display: block; margin: 0 auto; }
 .features-title { text-align: center; font-size: 1.3em; margin: 10px 0; }
 .features-text { padding: 0 15px; text-align: center; margin: 0 0 20px 0; }
 
-.footer { background-color: #525252; padding: 20px 0; }
+.footer-bg { width: 100%; background-color: #525252; }
+.footer { padding: 20px 0; }
 .footer-logo { margin: 5px 0 0 15px; }
 .footer-nav { float: left; margin: 8px 10px 0 70px; width: 160px; }
 .footer-nav li:first-child { margin: 0; }
