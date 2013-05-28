@@ -34,8 +34,8 @@
                 <div class="span4"><a href="#" title="Strength Hub"><img src="img/sh-logo.jpg" class="sh-logo" width="251" height="44" alt="Strength Hub Logo"/></a></div>
                 <div class="span6 offset2">
                     <ul class="nav">
-                        <li><a href="" title="About">About</a></li>
-                        <li><a href="" title="Features">Features</a></li>
+                        <li><a href="#sh-about" class="scroll" title="About">About</a></li>
+                        <li><a href="#sh-features" class="scroll" title="Features">Features</a></li>
                         <li><a href="" title="Blog">Blog</a></li>
                     </ul>
                     <a href="#" class="sign-up-header" title="Sign up to Strength Hub">Sign Up</a>
@@ -52,7 +52,7 @@
         </div><!--END OF: header-bg-->
         <div class="container">
             <div class="row">
-                <div class="about span12">
+                <div id="sh-about" class="about span12">
                 	<div class="row">
                         <div class="span12">
                             <div class="about-text-container">
@@ -84,7 +84,7 @@
             <div class="features-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="features span12">
+                        <div id="sh-features" class="features span12">
                             <p>STRENGTH HUB Features</p>
                             <div class="row">
                                 <div class="span3">
@@ -133,8 +133,8 @@
                                 </div>
                                 <div class="span5 offset4">
                                      <ul class="footer-nav">
-                                        <li><a href="" title="About">About</a></li>
-                                        <li><a href="" title="Features">Features</a></li>
+                                        <li><a href="#sh-about" class="scroll" title="About">About</a></li>
+                                        <li><a href="#sh-features" class="scroll" title="Features">Features</a></li>
                                         <li><a href="" title="Blog">Blog</a></li>
                                     </ul>
                                     <a href="https://twitter.com/StrengthHub" class="twitter-icon" title="Strength Hub on Twitter"><img src="img/sh-twitter-icon.png" width="36" height="35" alt="Twitter Icon"/></a>
@@ -146,5 +146,16 @@
                 </div><!-- END OF: container-->
             </div><!--END OF: footer-bg-->
     
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
+    <script src="js/bootstrap.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {			
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top - 114}, 500);
+			});
+		});
+	</script>
+
     </body>
 </html>
