@@ -6,12 +6,14 @@ a { text-decoration: none; }
 .float-left { float: left; }
 .float-right { float: right; }
 
-.header-bg { background: #FFF; width: 100%; z-index: 100; position: fixed; top: 0; -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); }
+.header-bg { background: #FFF; width: 100%; z-index: 100; position: fixed; top: 0; -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30); -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";	zoom: 1; }
 .header { background: #FFF; z-index: 200; padding: 10px 0 20px 0; }
+.tag-line h1 { color: #999; font-size: 0.5em; letter-spacing: 1px; text-transform: uppercase; margin: 0; display: inline-block; float: left; }
+.sh-logo { margin: 0 0 0 5px; }
 
-.sh-logo { margin: 40px 0 0 0; }
 
 .nav { float: left; margin: 55px 0 0 70px; width: 160px; }
+
 .nav li:first-child { margin: 0; }
 .nav li { float: left; margin: 0 0 0 15px; display: inline-block; }
 
