@@ -9,6 +9,7 @@ a { text-decoration: none; }
 .header-bg { background: #FFF; width: 100%; z-index: 100; position: fixed; top: 0; -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30); -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";	zoom: 1; }
 .header { background: #FFF; z-index: 200; padding: 10px 0 20px 0; }
 .tag-line h1 { padding-left: 4px; color: #ccc; font-size: 0.6em; letter-spacing: 1px; margin: 0; display: inline-block; float: left; }
+.tag-line h2 { padding-left: 4px; color: #ccc; font-size: 0.6em; letter-spacing: 1px; margin: 0; display: inline-block; float: left; }
 .sh-logo { margin: 0 0 0 5px; }
 
 
