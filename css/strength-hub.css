@@ -48,6 +48,8 @@ a { text-decoration: none; }
 
 .features-bg { width: 100%; background-color: #2383b5; }
 .features { color: #FFF; text-align: center; }
+.features a { color: #FFF; text-decoration: none; }
+.features a:hover { color: #FFF; text-decoration: none; }
 .features > p { font-size: 1.8em; margin: 10px 0 20px 0; }
 
 .features-icon { display: block; margin: 0 auto; }
