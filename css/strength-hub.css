@@ -9,6 +9,7 @@ a { text-decoration: none; }
 .header-bg { background: #FFF; width: 100%; z-index: 100; position: fixed; top: 0; -webkit-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); -moz-box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .52); filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30); -ms-filter: "progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";	zoom: 1; }
 .header { background: #FFF; z-index: 200; padding: 10px 0 20px 0; }
 .tag-line h1 { padding-left: 4px; color: #ccc; font-size: 0.6em; letter-spacing: 1px; margin: 0; display: inline-block; float: left; }
+.tag-line h2 { padding-left: 4px; color: #ccc; font-size: 0.6em; letter-spacing: 1px; margin: 0; display: inline-block; float: left; }
 .sh-logo { margin: 0 0 0 5px; }
 
 
@@ -31,6 +32,9 @@ a { text-decoration: none; }
 .about-text-container { width: 800px; position: relative; margin: 50px auto; text-align: center; }
 .about-text { text-align: center; background-color: #d75549; color: #FFF; font-size: 1.8em; line-height: 1.8em; padding: 2px;  position: relative;  }
 
+.subcontent { margin-top: 114px; margin-bottom: 50px; }
+.subcontent h1 { font-family: Arial, Helvetica, sans-serif; }
+
 .sign-up-about-container { position: relative; margin: 0 0 20px 40px; background: url("../img/sh-sal-arrow.png") no-repeat; background-position: 95px 28px; padding: 0 0 20px 0; }
 .sign-up-about { padding: 8px 15px; font-size: 1.8em; }
 
@@ -44,11 +48,15 @@ a { text-decoration: none; }
 
 .features-bg { width: 100%; background-color: #2383b5; }
 .features { color: #FFF; text-align: center; }
+.features a { color: #FFF; text-decoration: none; }
+.features a:hover { color: #FFF; text-decoration: none; }
 .features > p { font-size: 1.8em; margin: 10px 0 20px 0; }
 
 .features-icon { display: block; margin: 0 auto; }
 .features-title { text-align: center; font-size: 1.3em; margin: 10px 0; }
 .features-text { padding: 0 15px; text-align: center; margin: 0 0 20px 0; }
+
+.subcontent-icon { display: block; margin: 0 auto; margin-top: 20px; }
 
 .footer-bg { width: 100%; background-color: #525252; }
 .footer { padding: 20px 0; }
