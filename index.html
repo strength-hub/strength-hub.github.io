@@ -10,6 +10,7 @@
         <link href='http://fonts.googleapis.com/css?family=Ubuntu:300' rel='stylesheet' type='text/css'/>
         
         <link href="css/bootstrap.min.css" rel="stylesheet"/>
+        <link href="js/nivo-slider/nivo-slider.css" rel="stylesheet"/>
         <link href="css/strength-hub.css" rel="stylesheet"/>
         <!-- HTML5 shiv, for IE6-8 support of HTML5 elements -->
         <!--[if lt IE 9]>
@@ -18,17 +19,17 @@
 
         <script type="text/javascript">
 
-          var _gaq = _gaq || [];
-          var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
-          _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
-          _gaq.push(['_setAccount', 'UA-40048322-1']);
-          _gaq.push(['_trackPageview']);
-
-          (function() {
-            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-          })();
+//          var _gaq = _gaq || [];
+//          var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+//          _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+//          _gaq.push(['_setAccount', 'UA-40048322-1']);
+//          _gaq.push(['_trackPageview']);
+//
+//          (function() {
+//            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+//            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+//            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+//          })();
 
         </script>
     </head>
@@ -58,11 +59,21 @@
         <div class="container">
             <div class="row">
                 <div id="sh-about" class="about span12">
+                    <!--START OF SLIDER-->
+                    <div class="slider-wrapper">
+                        <div id="slider" class="nivoSlider">
+                            <img src="img/sh-slide-01.jpg" height="" alt="" />
+                            <a href="http://dev7studios.com"><img src="http://placehold.it/940x401/eaff00/000000" alt="" /></a>
+                            <img src="http://placehold.it/940x400/000000/ffffff" alt="" />
+                            <img src="http://placehold.it/940x400" alt="" />
+                        </div>
+                    </div>
+                    <!--END OF SLIDER-->
                 	<div class="row">
                         <div class="span12">
                             <div class="about-text-container">
                                 <span class="about-text">Strength Hub is a training log coupled with powerful performance and reporting tools for Strength &amp; Conditioning athletes, coaches, teams and training facilities within the competitive sports world. Strength Hub gives you the tools required to log your performance, analyze, plan and visualize your athletic career - alone or as part of a team.</span>
-                            </div>
+                            </div><!--END OF: about-text-container-->
                         </div>
                     </div>
                     <div class="row">
@@ -152,6 +163,7 @@
     
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
     <script src="js/bootstrap.js"></script>
+    <script src="js/nivo-slider/jquery.nivo.slider.pack.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function($) {			
 			$(".scroll").click(function(event){		
@@ -160,6 +172,21 @@
 			});
 		});
 	</script>
+	<script type="text/javascript">
+		$(window).load(function() {
+			$('#slider').nivoSlider({
+				effect: 'fade', // Specify sets like: 'fold,fade,sliceDown'
+				animSpeed: 500, // Slide transition speed
+				pauseTime: 3000, // How long each slide will show
+				directionNav: false, // Next & Prev navigation
+				controlNav: false, // 1,2,3... navigation
+				controlNavThumbs: false, // Use thumbnails for Control Nav
+				pauseOnHover: false, // Stop animation while hovering
+				manualAdvance: false, // Force manual transitions
+				randomStart: false // Start on a random slide
+			});
+		});
+    </script>
 
     </body>
 </html>
